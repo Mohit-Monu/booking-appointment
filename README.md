@@ -22,7 +22,7 @@ This is a front-end application designed to facilitate the booking of medical ap
 
 ## Installation
 
-1. **Clone Repository:** `git clone https://github.com/Mohit-Monu/booking-appointment`
+1. **Clone Repository:** `git clone https://github.com/Mohit-Monu/booking-appointment` 
 2. **Install Dependencies:** `npm install`
 3. **Run Application:** `npm start`
 
