@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./BookAppontment.module.css";
 const BookAppontment = (props) => {
   const selectedSVG=props.method
