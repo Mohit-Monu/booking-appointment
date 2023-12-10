@@ -1,0 +1,16 @@
+.container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.containerday {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.daysContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
