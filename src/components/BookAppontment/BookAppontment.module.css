@@ -1,0 +1,65 @@
+.container {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.header {
+  display: block;
+  font-weight: 500;
+}
+.header2 {
+  display: block;
+  margin-top: 10px;
+  color: gray;
+}
+.green {
+  display: block;
+  color: green;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.blue {
+  display: block;
+  color: blue;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.bigcontainer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px; 
+  border-bottom: 2px solid black;
+}
+.container2{
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+.svgselected{
+  padding: 30px;
+  background-color: rgb(36, 124, 36);;
+  margin: 5px;
+  border-radius: 10%;
+  color: white;
+  cursor: pointer;
+
+}
+.TextSelected{
+  margin-top: 5px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+.svgs{
+  padding: 30px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 10%;
+  cursor: pointer;
+
+}
+.Text{
+  margin-top: 5px;
+  text-align: center;
+  font-weight: 500;
+
+}
