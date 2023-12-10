@@ -13,11 +13,12 @@ const ShowDoctors = () => {
       specilist: "Cardiologist",
       image: "https://cdn-icons-png.flaticon.com/512/2713/2713228.png",
     },
+    
   ];
   return (
     <div className={styles.doctorcontainer}>
         {doctorDetails.map((doctor=>(
-            <ShowDoctor doctor={doctor}></ShowDoctor>
+            <ShowDoctor key={doctor.name} doctor={doctor} ></ShowDoctor>
         )))}
     </div>
   );

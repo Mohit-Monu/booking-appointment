@@ -1,5 +1,10 @@
 .container{
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: white;
+  padding-bottom: 50px;
+}
+.bigcontainer{
   background-color: rgb(221, 221, 221);
+
 }
