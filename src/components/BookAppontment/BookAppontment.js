@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styles from "./BookAppontment.module.css";
-const BookAppontment = () => {
-  const [selectedSVG,setSelectedSVG]=useState("clinic")
+const BookAppontment = (props) => {
+  const selectedSVG=props.method
   function changeSelected(svg){
-    setSelectedSVG(svg)
+    props.setMethodHandler(svg)
   }
   return (
     <div className={styles.bigcontainer}>
@@ -20,7 +20,7 @@ const BookAppontment = () => {
             width="50"
             height="50"
             fill="currentColor"
-            class="bi bi-hospital"
+            className="bi bi-hospital"
             viewBox="0 0 16 16"
           >
             <path d="M8.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1h1ZM13.25 9a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25zM13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm.25 1.75a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25zm-11-4a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 9.75v-.5A.25.25 0 0 0 2.75 9zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25zM2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25z" />
@@ -35,11 +35,11 @@ const BookAppontment = () => {
             width="50"
             height="50"
             fill="currentColor"
-            class="bi bi-telephone-fill"
+            className="bi bi-telephone-fill"
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
             />
           </svg>
@@ -51,11 +51,11 @@ const BookAppontment = () => {
             width="50"
             height="50"
             fill="currentColor"
-            class="bi bi-camera-video-fill"
+            className="bi bi-camera-video-fill"
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2z"
             />
           </svg>
