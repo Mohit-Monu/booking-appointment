@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./ShowSlots.module.css";
 import ShowDay from "../ShowDay/ShowDay";
+import ShowSlot from "../ShowSlot/ShowSlot";
 const ShowSlots = (props) => {
   const [slotno, setSlotno] = useState([0, 2]);
   const [date, setDay] = useState(props.slots);
@@ -52,7 +53,8 @@ const ShowSlots = (props) => {
     }
   }, [slotno, props.slots]);
   return (
-      <div className={styles.container}>
+    <div>
+            <div className={styles.container}>
         <svg
           style={{ cursor: "pointer" }}
           xmlns="http://www.w3.org/2000/svg"
@@ -65,6 +67,7 @@ const ShowSlots = (props) => {
             if (slotno[0] === 0) {
             } else {
               setSlotno([slotno[0] - 3, slotno[1] - 3]);
+              setSelectedSlot(0)
             }
           }}
         >
@@ -86,7 +89,8 @@ const ShowSlots = (props) => {
           fill="currentColor"
           className="bi bi-chevron-compact-right"
           viewBox="0 0 16 16"
-          onClick={() => setSlotno([slotno[0] + 3, slotno[1] + 3])}
+          onClick={() => {setSlotno([slotno[0] + 3, slotno[1] + 3])
+            setSelectedSlot(0)}}
         >
           <path
             fillRule="evenodd"
@@ -94,6 +98,8 @@ const ShowSlots = (props) => {
           />
         </svg>
       </div>
+        {<ShowSlot slots={date[selectedSlot].slots}/>}
+    </div>
   );
 };
 

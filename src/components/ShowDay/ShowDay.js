@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./ShowDay.module.css";
 const ShowDay = (props) => {
-  console.log(props);
   return (
     <div className={styles.container} onClick={()=>props.setSelectedSlot(props.index)}>
       <h4>{props.day.date}</h4>
